@@ -6,25 +6,25 @@
       "use strict";
       function fRechne() {
         var vDividend;
-	var vDivisor;
+	      var vDivisor;
 		
-	vDividend = document.getElementById("idDividend").value;
-	vDivisor = document.getElementById("idDivisor").value;
-		
-	var vQuotient;
-	vQuotient = vDividend / vDivisor;
+        vDividend = document.getElementById("idDividend").value;
+        vDivisor = document.getElementById("idDivisor").value;
+          
+        var vQuotient;
+        vQuotient = vDividend / vDivisor;
 
-	var vAusgabeHtml;
-	vAusgabeHtml = "";
-	vAusgabeHtml = vAusgabeHtml + "Der Quotient von ";
-	vAusgabeHtml = vAusgabeHtml + vDividend;
-	vAusgabeHtml = vAusgabeHtml + " und ";
-	vAusgabeHtml = vAusgabeHtml + vDivisor;
-	vAusgabeHtml = vAusgabeHtml + " ist ";
-	vAusgabeHtml = vAusgabeHtml + vQuotient;
-	vAusgabeHtml = vAusgabeHtml + ".";
+        var vAusgabeHtml;
+        vAusgabeHtml = "";
+        vAusgabeHtml = vAusgabeHtml + "Der Quotient von ";
+        vAusgabeHtml = vAusgabeHtml + vDividend;
+        vAusgabeHtml = vAusgabeHtml + " und ";
+        vAusgabeHtml = vAusgabeHtml + vDivisor;
+        vAusgabeHtml = vAusgabeHtml + " ist ";
+        vAusgabeHtml = vAusgabeHtml + vQuotient;
+        vAusgabeHtml = vAusgabeHtml + ".";
 
-	document.getElementById("idAusgabeHtml").innerHTML = vAusgabeHtml;
+        document.getElementById("idAusgabeHtml").innerHTML = vAusgabeHtml;
       }
     </script>
   </head>
