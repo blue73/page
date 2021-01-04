@@ -5,10 +5,31 @@
     <script>
       "use strict";
       function fRechne() {
-      	return 5;
+        var vDividend;
+		    var vDivisor;
+		
+		    vDividend = document.getElementById("idDividend").value;
+		    vDivisor = document.getElementById("idDivisor").value;
+		
+		    var vQuotient;
+		    vQuotient = vDividend / vDivisor;
+		
+		    var vAusgabeHtml;
+		
+		    vAusgabeHtml = "";
+		    vAusgabeHtml = vAusgabeHtml + "Der Quotient von ";
+		    vAusgabeHtml = vAusgabeHtml + vDividend;
+		    vAusgabeHtml = vAusgabeHtml + " und ";
+		    vAusgabeHtml = vAusgabeHtml + vDivisor;
+		    vAusgabeHtml = vAusgabeHtml + " ist ";
+		    vAusgabeHtml = vAusgabeHtml + vQuotient;
+		    vAusgabeHtml = vAusgabeHtml + ".";
+		
+		    document.getElementById("idAusgabeHtml").innerHTML = vAusgabeHtml;
       }
     </script>
   </head>
+  
   <body>
     <h1>Divisionsrechner</h1>
     Dividend: <input id="idDividend" type="text" value="10"><br />
