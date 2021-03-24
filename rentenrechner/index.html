@@ -18,7 +18,7 @@
                var vLaufzeit = parseFloat(document.getElementById("idLaufzeit").value);
                
                var vZinsfaktor = 1 + vZinssatz / 100;
-               var vRentenendwert = vRente * (Math.pow(vZinsfaktor, vLaufzeit) - 1) / vZinsfaktor - 1) ;
+               var vRentenendwert = vRente * (Math.pow(vZinsfaktor, vLaufzeit) - 1) / (vZinsfaktor - 1) ;
                
                var vZinsen;
                var vKapitalJahresEnde;
