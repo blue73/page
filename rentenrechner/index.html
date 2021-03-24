@@ -37,7 +37,7 @@
                     vKapitalJahresEnde = vKapitalJahresAnfang + vZinsen + vRente;
                     
                     if (vJahr == vLaufzeit) {
-                         vAusgabe = vAusgabe + "<tr><td>" + vJahr + "</td><td>" + fEuro(vKapitalJahresAnfang) + "</td><td>/</td><td>/</td><td>/</td></tr>";
+                         vAusgabe = vAusgabe + "<tr><td>" + vJahr + "</td><td>" + fEuro(vKapitalJahresAnfang) + "</td><td></td><td></td><td></td></tr>";
                     } else {
                          vAusgabe = vAusgabe + "<tr><td>" + vJahr + "</td><td>" + fEuro(vKapitalJahresAnfang) + "</td><td>" + fEuro(vZinsen) + "</td><td>" + fEuro(vRente) + "</td><td>" + fEuro(vKapitalJahresEnde) + "</td></tr>";
                     }
