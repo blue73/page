@@ -34,7 +34,7 @@
 
                while (vJahr <= vLaufzeit) {
                     vZinsen = vKapitalJahresAnfang * (vZinssatz / 100);
-                    vKapitalJahresEnde = vKapitalJahresAnfang + vZinsen;
+                    vKapitalJahresEnde = vKapitalJahresAnfang + vZinsen + vRente;
                     
                     if (vJahr == vLaufzeit) {
                          vAusgabe = vAusgabe + "<tr><td>" + vJahr + "</td><td>" + fEuro(vKapitalJahresAnfang) + "</td><td>egal</td><td>egal</td><td>egal</td></tr>";
